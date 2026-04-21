@@ -93,7 +93,7 @@ function moveSnake() {
 
 const cj = document.getElementById('cj');
 function drawSnake() {
-  ctx.createPattern(cj, "repeat");
+  ctx.fillStyle = ctx.createPattern(cj, "repeat");
   ctx.strokeStyle = snakeBorder;
 
   snake.forEach((part) => {
